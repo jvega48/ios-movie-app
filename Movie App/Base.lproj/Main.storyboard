@@ -19,29 +19,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OIX-rk-v64">
-                                <rect key="frame" x="98.999999999999986" y="127.99999999999997" width="136.66666666666666" height="266.33333333333331"/>
+                                <rect key="frame" x="99" y="127.99999999999997" width="145" height="394.33333333333331"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JCJ-Wx-dA3">
-                                        <rect key="frame" x="0.0" y="0.0" width="136.66666666666666" height="266.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="266.33333333333331"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="73" translatesAutoresizingMaskIntoConstraints="NO" id="hjB-1f-n9G">
-                                                <rect key="frame" x="8.0000000000000071" y="20.000000000000014" width="120.66666666666669" height="226.33333333333334"/>
+                                                <rect key="frame" x="8" y="20.000000000000014" width="129" height="226.33333333333334"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Term" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOP-XU-WSr">
-                                                        <rect key="frame" x="12" y="0.0" width="96.666666666666671" height="20.333333333333332"/>
+                                                        <rect key="frame" x="16.333333333333336" y="0.0" width="96.666666666666657" height="20.333333333333332"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Params" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qfr-Xn-9DK">
-                                                        <rect key="frame" x="25.666666666666664" y="93.333333333333329" width="69.666666666666686" height="30"/>
+                                                        <rect key="frame" x="29.666666666666664" y="93.333333333333329" width="69.666666666666686" height="30"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5a-nI-SyI">
-                                                        <rect key="frame" x="36.333333333333336" y="196.33333333333334" width="48.000000000000007" height="30"/>
+                                                        <rect key="frame" x="40.666666666666657" y="196.33333333333334" width="48" height="30"/>
                                                         <state key="normal" title="Search"/>
                                                         <connections>
                                                             <action selector="searchTrigger:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UdA-Y5-A7u"/>
@@ -56,6 +56,13 @@
                                             <constraint firstItem="hjB-1f-n9G" firstAttribute="leading" secondItem="JCJ-Wx-dA3" secondAttribute="leadingMargin" id="cna-JP-cMw"/>
                                         </constraints>
                                     </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VvL-US-BxB">
+                                        <rect key="frame" x="0.0" y="266.33333333333331" width="145" height="128"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="P2J-7b-Uah" appends="YES" id="m7l-Ng-SGr"/>
+                                        </connections>
+                                    </imageView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -63,11 +70,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="imagePlaceholder" destination="VvL-US-BxB" id="8ag-pW-8Ok"/>
                         <outlet property="searchField" destination="Qfr-Xn-9DK" id="pFE-co-S3d"/>
                         <outlet property="searchLabel" destination="rOP-XU-WSr" id="aZU-j6-xgU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="P2J-7b-Uah">
+                    <connections>
+                        <action selector="imagePicker:" destination="BYZ-38-t0r" id="M20-c2-nOH"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>
