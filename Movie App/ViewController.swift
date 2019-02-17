@@ -10,26 +10,26 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var searchLabelText: UILabel!
-    @IBOutlet weak var searchTextField: UITextField!
-    @IBAction func searchTrigger(_ sender: UIButton) {
-        searchLabelText.text = "Clicking"
-    }
+    
+    @IBOutlet weak var searchLabel: UILabel!
+    @IBOutlet weak var searchField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        searchTextField.delegate = self
+        searchField.delegate = self
+    }
+    @IBAction func searchTrigger(_ sender: UIButton) {
+        searchLabel.text = "Clicking"
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        // hides the keyboard after the user has return
-        searchTextField.resignFirstResponder()
+        searchField.resignFirstResponder()
         return true
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        searchLabelText.text = searchTextField.text
+        searchLabel.text = searchField.text
     }
 }
 

@@ -44,7 +44,7 @@
                                                         <rect key="frame" x="36.333333333333336" y="196.33333333333334" width="48.000000000000007" height="30"/>
                                                         <state key="normal" title="Search"/>
                                                         <connections>
-                                                            <action selector="searchTrigger:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q4Q-Iv-MwX"/>
+                                                            <action selector="searchTrigger:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UdA-Y5-A7u"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -63,8 +63,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="searchLabelText" destination="rOP-XU-WSr" id="jZJ-cJ-VBG"/>
-                        <outlet property="searchTextField" destination="Qfr-Xn-9DK" id="nPV-Vl-Bpq"/>
+                        <outlet property="searchField" destination="Qfr-Xn-9DK" id="pFE-co-S3d"/>
+                        <outlet property="searchLabel" destination="rOP-XU-WSr" id="aZU-j6-xgU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
