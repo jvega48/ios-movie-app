@@ -59,7 +59,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
                 self.apiData.text = "\(str)"
                 self.pgrs.stopAnimating()
                 self.pgrs.isHidden = true
-                self.apiData.isHidden = falseb
+                self.apiData.isHidden = false
 
             }catch{
                 NSLog("Error on the api request")
