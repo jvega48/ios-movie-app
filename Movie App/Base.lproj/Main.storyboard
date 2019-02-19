@@ -19,6 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OIX-rk-v64">
+<<<<<<< HEAD
                                 <rect key="frame" x="59" y="119" width="256" height="645"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -30,18 +31,39 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Term" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOP-XU-WSr">
                                                         <rect key="frame" x="71.666666666666657" y="0.0" width="96.666666666666657" height="30"/>
+=======
+                                <rect key="frame" x="99" y="127.99999999999997" width="145" height="394.33333333333331"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JCJ-Wx-dA3">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="266.33333333333331"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="73" translatesAutoresizingMaskIntoConstraints="NO" id="hjB-1f-n9G">
+                                                <rect key="frame" x="8" y="20.000000000000014" width="129" height="226.33333333333334"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Term" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOP-XU-WSr">
+                                                        <rect key="frame" x="16.333333333333336" y="0.0" width="96.666666666666657" height="20.333333333333332"/>
+>>>>>>> 0beb28c3845fd9912def7f54630f699519743ddb
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Params" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qfr-Xn-9DK">
+<<<<<<< HEAD
                                                         <rect key="frame" x="85.333333333333314" y="38" width="69.666666666666686" height="30"/>
+=======
+                                                        <rect key="frame" x="29.666666666666664" y="93.333333333333329" width="69.666666666666686" height="30"/>
+>>>>>>> 0beb28c3845fd9912def7f54630f699519743ddb
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5a-nI-SyI">
+<<<<<<< HEAD
                                                         <rect key="frame" x="96" y="76" width="48" height="30"/>
+=======
+                                                        <rect key="frame" x="40.666666666666657" y="196.33333333333334" width="48" height="30"/>
+>>>>>>> 0beb28c3845fd9912def7f54630f699519743ddb
                                                         <state key="normal" title="Search"/>
                                                         <connections>
                                                             <action selector="searchTrigger:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UdA-Y5-A7u"/>
@@ -49,6 +71,7 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
+<<<<<<< HEAD
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="54" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBO-5M-rPm">
                                                 <rect key="frame" x="8" y="124" width="240" height="513"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -60,6 +83,8 @@
                                                 <rect key="frame" x="118" y="264" width="20" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </activityIndicatorView>
+=======
+>>>>>>> 0beb28c3845fd9912def7f54630f699519743ddb
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -67,6 +92,16 @@
                                             <constraint firstItem="hjB-1f-n9G" firstAttribute="leading" secondItem="JCJ-Wx-dA3" secondAttribute="leadingMargin" id="cna-JP-cMw"/>
                                         </constraints>
                                     </view>
+<<<<<<< HEAD
+=======
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VvL-US-BxB">
+                                        <rect key="frame" x="0.0" y="266.33333333333331" width="145" height="128"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="P2J-7b-Uah" appends="YES" id="m7l-Ng-SGr"/>
+                                        </connections>
+                                    </imageView>
+>>>>>>> 0beb28c3845fd9912def7f54630f699519743ddb
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -74,8 +109,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+<<<<<<< HEAD
                         <outlet property="apiData" destination="hBO-5M-rPm" id="Ihy-WB-gJU"/>
                         <outlet property="pgrs" destination="0L8-I7-MKZ" id="BmG-87-FFw"/>
+=======
+                        <outlet property="imagePlaceholder" destination="VvL-US-BxB" id="8ag-pW-8Ok"/>
+>>>>>>> 0beb28c3845fd9912def7f54630f699519743ddb
                         <outlet property="searchField" destination="Qfr-Xn-9DK" id="pFE-co-S3d"/>
                         <outlet property="searchLabel" destination="rOP-XU-WSr" id="aZU-j6-xgU"/>
                     </connections>

@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    
+
     @IBOutlet weak var pgrs: UIActivityIndicatorView!
     @IBOutlet weak var apiData: UILabel!
     @IBOutlet weak var searchLabel: UILabel!
@@ -79,7 +79,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     func textFieldDidEndEditing(_ textField: UITextField) {
         searchLabel.text = searchField.text
         NSLog("Running the search type trigger")
-
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
