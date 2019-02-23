@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     
+    @IBOutlet weak var pgrs: UIActivityIndicatorView!
+    @IBOutlet weak var apiData: UILabel!
     @IBOutlet weak var searchLabel: UILabel!
     @IBOutlet weak var searchField: UITextField!
     @IBOutlet weak var imagePlaceholder: UIImageView!
@@ -31,11 +33,45 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        apiData.isHidden = true
+        pgrs.isHidden = true
         searchField.delegate = self
     }
     @IBAction func searchTrigger(_ sender: UIButton) {
         NSLog("Running the search trigger")
         searchLabel.text = "Clicking"
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+        pgrs.startAnimating()
+        pgrs.isHidden = false;
+        apiData.isHidden = true
+        NSLog("Running the search button trigger")
+        searchLabel.text = "Clicking"
+        
+        let API_URL = URL(string: "https://api.lyrics.ovh/v1/Drake/Fake%20Love")!
+        NSLog("Checking the api call \(API_URL)")
+        let task = session.dataTask(with: API_URL) {(data, responds, error) in
+            print("In the session")
+            let status = (responds as! HTTPURLResponse).statusCode
+            print(status)
+            guard let a = data else {return}
+            do{
+                
+                let str = try JSONSerialization.jsonObject(with: a, options: [])
+                NSLog("\(str)")
+                self.apiData.text = "\(str)"
+                self.pgrs.stopAnimating()
+                self.pgrs.isHidden = true
+                self.apiData.isHidden = false
+                
+            }catch{
+                NSLog("Error on the api request")
+            }
+            
+            
+        }
+        
+        task.resume()
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
